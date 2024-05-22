@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 1.2em;
+    background-color: #f5f5f5;
+    font-family:"Rubik", sans-serif;   
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: none;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.logo_container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    width: 100vw;
+    height: 20vh;
+}
+
+h1 {
+    font-size: 8rem;
+    color: #7a42eb;
+    transition: color 0.1s, -webkit-text-stroke 0.1s ease-in-out;
+}
+
+h1:hover {
+    color: #d5f901;
+    -webkit-text-stroke: #1c1e28 2px;
+}
+
+
+h2{
+    font-size: 1.5rem;
+    color: #d5f901;
+    transition: color 0.1s, -webkit-text-stroke 0.1s ease-in-out;
+    -webkit-text-stroke: #1c1e28 1px;
+}
+
+
+
+form {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+input,
+a {
+    padding: 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 20%;
+    border: solid #1c1e28 2px;
+    background-color: #7a42eb;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: #d5f901;
+    color: #1c1e28;
+
+}
+input:focus::placeholder {
+    color: #1c1e28;
+    
+}
+
+input:hover {
+    outline: none;
+    background-color: #d5f901;
+    color: #1c1e28;
+
+}
+input:hover::placeholder {
+    color: #1c1e28;
+    
+}
+
+
+::placeholder {
+    color: #f5f5f5;
+}
+
+
+.submit_button {
+    padding: 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    min-width: 8vw; 
+    color: aliceblue;
+    border: solid #1c1e28 2px;
+    text-decoration: none;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.submit_button:hover {
+    background-color: #d5f901;
+    color: #1c1e28;
+}
+
