@@ -26,20 +26,16 @@
             <h1> Thinkion </h1>  
         </div>
         <h2> Todo tu negocio en un sólo lugar </h2>
-        <form action="#" method="post">
-            <input class="input_email" type="text" name="email" placeholder="Email">
-            <input class="input_pass" type="Password" name="pass" placeholder="Password">
-            <input class="submit_button" type="submit" value=" Log in " />
-            <a class="submit_button" href="/register"> Register </a>
+        <form method="POST" action="{{ route('validar-inicio') }}">
+        @csrf
+        <input class="input_name" type="text" name="name" placeholder="Name" required autocomplete="name">
+            <input class="input_email" type="email" name="email" placeholder="Email" required autocomplete="email">
+            <input class="input_pass" type="password" name="password" placeholder="Password" required autocomplete="new-password">
+            <input class="submit_button" type="submit" value="Login">
+            <a class="submit_button" href="{{route('registro')}}"> Register </a>
         </form>
-
-
     </div>
-
-
 </body>
-
-
 
 
 </body>
